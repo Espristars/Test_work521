@@ -22,6 +22,5 @@ async def run_migrations():
 app = Litestar(
     on_startup=[run_migrations],
     route_handlers=[UserController],
-    plugins=[plugin],
-    debug=True
+    plugins=[plugin]
 )
